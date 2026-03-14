@@ -1,0 +1,161 @@
+html {
+  background-image: url(img/pexels-danny-meneses-340146-943096.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+/* HEADER */
+.header-container {
+  display: flex;
+  height: 50px;
+  position: relative;
+  padding: 5px 25px 0;
+  text-align: justify;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #00000071;
+  backdrop-filter: blur(50px);
+  border-bottom: solid #69696971 1px;
+}
+
+.header-container nav {
+  padding-top: 10px;
+  padding-right: 25px;
+}
+.header-container nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Botões gerais */
+
+button {
+  background-color: #2222221f;
+  backdrop-filter: blur(20px);
+  border: solid #69696971 1px;
+  color: white;
+  border-radius: 31px;
+  padding: 5px;
+  margin: 5px 5px 0;
+  box-shadow: 0 10px 50px #45454571;
+}
+
+button:hover {
+  background-color: #ffffff5e;
+  padding: 10px;
+  margin: -10px 0;
+}
+
+button:active {
+  background-color: rgba(36, 34, 161, 0.219);
+}
+
+button a {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MAIN */
+/* MAIN - Entrada */
+.container-1 {
+  color: white;
+  padding: 25px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 300px;
+}
+
+.container-1 h1 {
+  font-size: 75px;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: -30px;
+}
+.container-1 h2 {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.container-1 h4 {
+  margin: 0 0 25px;
+  font-weight: lighter;
+  position: relative;
+}
+
+/* MAIN - Sobre Mim */
+.container-2 {
+  background-color: #22222200;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 31px;
+  box-shadow: 0 10px 50px #1f1f1f71;
+}
+.container-2 figure{
+  margin: 0;
+  padding: 25px;
+}
+.container-2 figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 21%;
+  object-fit: cover;
+  float:inline-start;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+.container-2 figure p {
+  max-width: 500px;
+}
+.content-div {
+  display: flex;
+}
+.text-div h1 {
+  margin-left: 25px;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards-div {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: end;
+}
+.block-1,
+.block-2,
+.block-3,
+.block-4 {
+  background-color: #45454567;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 31px;
+}
+.block-1 img,
+.block-2 img,
+.block-3 img,
+.block-4 img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+.block-1 h2,
+.block-2 h2,
+.block-3 h2,
+.block-4 h2 {
+  margin: 0;
+}
