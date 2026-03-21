@@ -2,7 +2,7 @@ html {
   background-image: url(img/pexels-danny-meneses-340146-943096.jpg);
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -41,15 +41,15 @@ button {
   border: solid #69696971 1px;
   color: white;
   border-radius: 31px;
-  padding: 5px;
+  padding: 10px;
   margin: 5px 5px 0;
   box-shadow: 0 10px 50px #45454571;
 }
 
 button:hover {
   background-color: #ffffff5e;
-  padding: 10px;
-  margin: -10px 0;
+  /* padding: 10px;
+  margin: -10px 0; */
 }
 
 button:active {
@@ -63,8 +63,35 @@ button a {
   text-decoration: none;
 }
 
+/* Títulos dos cards */
+
+.text-div h1 {
+  margin-left: 25px;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-div h2 {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+/* Textos dos cards */
+
+.text-div p {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+/* Separador */
+.separator {
+  margin: 15px;
+  border: 1px solid #ffffff34;
+}
+
 /* MAIN */
 /* MAIN - Entrada */
+
 .container-1 {
   color: white;
   padding: 25px;
@@ -92,6 +119,7 @@ button a {
 }
 
 /* MAIN - Sobre Mim */
+
 .container-2 {
   background-color: #22222200;
   backdrop-filter: blur(50px);
@@ -102,7 +130,7 @@ button a {
   border-radius: 31px;
   box-shadow: 0 10px 50px #1f1f1f71;
 }
-.container-2 figure{
+.container-2 figure {
   margin: 0;
   padding: 25px;
 }
@@ -111,21 +139,16 @@ button a {
   height: 200px;
   border-radius: 21%;
   object-fit: cover;
-  float:inline-start;
+  float: inline-start;
   margin-right: 25px;
   margin-bottom: 15px;
 }
 .container-2 figure p {
   max-width: 500px;
+  margin-left: 0;
 }
 .content-div {
   display: flex;
-}
-.text-div h1 {
-  margin-left: 25px;
-  margin-bottom: 0;
-  font-size: 50px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cards-div {
@@ -158,4 +181,204 @@ button a {
 .block-3 h2,
 .block-4 h2 {
   margin: 0;
+}
+
+/* Habilidades */
+
+.container-3 {
+  background-color: #22222200;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 31px;
+  box-shadow: 0 10px 50px #1f1f1f71;
+}
+.hab-cards-div {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hab-1,
+.hab-2,
+.hab-3 {
+  background-color: #45454567;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 31px;
+}
+.hab-1 button,
+.hab-2 button,
+.hab-3 button {
+  border-radius: 11px;
+  margin: 0;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+/* Projetos */
+
+.container-4 {
+  background-color: #22222200;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 31px;
+  box-shadow: 0 10px 50px #1f1f1f71;
+}
+.prj-cards-div {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: end;
+}
+.projeto-1 {
+  background-color: #45454567;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 31px;
+}
+.projeto-1 img {
+  max-width: 500px;
+}
+.projeto-1 img:hover{
+  max-width: 600px;
+}
+.other-buttons button {
+  padding: 10px;
+  border-radius: 11px;
+}
+.github {
+  background-color: #000;
+  border: 1px solid #ffffff50;
+}
+.github a{
+  font-size: 14px;
+}
+.github img {
+  max-width: 15px;
+  margin-right: 5px;
+}
+.livedemo img {
+  max-width: 15px;
+  margin-right: 10px;
+}
+.livedemo figure {
+  margin: 0;
+}
+.livedemo p {
+  float: right;
+  margin: 0;
+}
+
+/* Contato */
+
+.container-5 {
+  background-color: #22222200;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 31px;
+  box-shadow: 0 10px 50px #1f1f1f71;
+}
+.cont-content-div {
+  display: flex;
+}
+.um {
+  flex: 1;
+}
+.dois {
+  flex: 1;
+}
+.cont-cards-div-1 {
+  margin-top: 25px;
+}
+
+.contact-card {
+  display: flex;
+  background-color: #45454567;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 15px;
+  border-radius: 31px;
+  /* max-width: 300px; */
+}
+.contact-card h5 {
+  margin-bottom: 0;
+  color: #aaaaaa;
+  font-weight: 500;
+}
+.contact-card p {
+  margin-top: 5px;
+}
+.contact-card figure {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 15px;
+}
+.contact-card figure img {
+  max-width: 50px;
+}
+.contact-card:hover {
+  background-color: #ffffff5e;
+}
+.form-div {
+  background-color: #45454567;
+  backdrop-filter: blur(50px);
+  border: solid #69696971 1px;
+  color: white;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 31px;
+  /* max-width: 300px; */
+}
+.form-div input {
+  background-color: #0000000e;
+  color: #fff;
+  padding-left: 10px;
+  border: solid #69696971 1px;
+  border-radius: 9px;
+  height: 30px;
+  width: 600px;
+}
+
+.form-div textarea {
+  background-color: #0000000e;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: segoe UI;
+  border: solid #69696971 1px;
+  border-radius: 15px;
+  height: 100px;
+  width: 600px;
+}
+.submit-button {
+  /* justify-self: center; */
+}
+.submit-button input {
+  background-color: #000;
+  color: #fff;
+  border: solid #b1b1b171 1px;
+  border-radius: 15px;
+  margin-top: 25px;
+  height: 50px;
+}
+.submit-button input:hover {
+  background-color: #ffffff5e;
 }
